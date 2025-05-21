@@ -76,3 +76,87 @@ footer{
     color: rgb(13, 143, 202);
     margin-bottom: 50px;
 }
+h2{
+    cursor: pointer;
+}
+.article {
+    cursor: pointer;
+  }
+  .article:hover {
+    background-color: #f0f0f0;
+  }
+
+
+@media (max-width: 428px){
+    .article{
+        display: block
+    }
+    
+    .text-article{
+        padding: 0;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    header h3{
+        left: 50px;
+    }
+    .body-text h1{
+        font-size: 35px;
+        left: 50px;
+    }
+    .img-article{
+        margin-top: 50px;
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .block_container{
+        margin-top: 50px;
+    }
+    .footer-text-second, .footer-text-first{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 980px){
+    .article{
+        display: block;
+    }
+    .text-article{
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+    }
+    .img-article{
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .footer-text-first, .footer-text-second{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1276px){
+    .text-article{
+        padding-left: 100px;
+        padding-right: 50px;
+       
+    }
+}
+  

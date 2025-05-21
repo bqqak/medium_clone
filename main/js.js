@@ -22,9 +22,15 @@ function displayArticles(articles) {
   articles.forEach(article => {
     const el = document.createElement('div');
     el.className = 'article';
+
+    el.addEventListener('click', () => {
+      localStorage.setItem('selectedArticle', JSON.stringify(article));
+      window.location.href = `addition.html`
+    })
+
     el.innerHTML = `
     <div class="text-article">
-      <h2><a href="${article.url}" target="_blank">${article.title}</a></h2>
+      <h2>${article.title}</h2>
       <p>${article.abstract}</p>
     </div>
       ${article.media && article.media[0] ? `<img src="${article.media[0]['media-metadata'][2].url}" alt="" class='img-article'>` : ''}
